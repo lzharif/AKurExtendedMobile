@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Pengaturan Olah Citra">
+        <ListPreference
+            android:dialogTitle="Alat ukur yang digunakan"
+            android:defaultValue="1"
+            android:entries="@array/jenis_alat_ukur_label"
+            android:entryValues="@array/jenis_alat_ukur"
+            android:key="jenisalatukur"
+            android:title="Jenis Alat Ukur"
+            android:summary="Pilih alat ukur yang ingin kamu gunakan" />
+        <CheckBoxPreference
+            android:key="modeflash"
+            android:title="Lampu flash"
+            android:summaryOff="Lampu flash dimatikan"
+            android:summaryOn="Lampu flash dihidupkan"
+            android:defaultValue="true"
+            />
+        <EditTextPreference
+            android:key="nilaiambangbatasputih"
+            android:title="Nilai ambang batas putih"
+            android:summary="Untuk metode perhitungan piksel putih"
+            android:dialogTitle="Masukkan nilainya"
+            android:defaultValue="748"
+            android:inputType="number"
+            />
+        <ListPreference
+            android:dialogTitle="Ukuran Citra yang Akan Diolah"
+            android:key="ukurancitra"
+            android:summary="Pilih ukuran citra yang akan diolah"
+            android:title="Ukuran Citra" />
+        <!--android:entries="@array/ukuran_label"-->
+        <!--android:entryValues="@array/ukuran_citra" />-->
+        <!--<ListPreference-->
+            <!--android:defaultValue="1"-->
+            <!--android:dialogTitle="Pilih metode olah citra:"-->
+            <!--android:entries="@array/metode_olah_citra_label"-->
+            <!--android:entryValues="@array/metode_olah_citra"-->
+            <!--android:key="metodeolahcitra"-->
+            <!--android:summary="Pilih metode olah citra yang akan digunakan"-->
+            <!--android:title="Metode Olah Citra" />-->
+    </PreferenceCategory>
+    <!--<PreferenceCategory android:title="Pengaturan Google Fusion Tables">-->
+        <!--<EditTextPreference-->
+            <!--android:defaultValue="1bG3l1PmAe9WxZuOcpmp3tu_Y9zGmKgWn_tQsnEGY"-->
+            <!--android:dialogTitle="Masukkan Nama Fusion Tables anda"-->
+            <!--android:key="idfusiontables"-->
+            <!--android:title="Nama Fusion Tables" />-->
+        <!--<EditTextPreference-->
+            <!--android:defaultValue="AIzaSyBMBTE_35LEba7tfghu4QKFa93eHn8WxIk"-->
+            <!--android:dialogTitle="Masukkan ID Fusion Tables anda"-->
+            <!--android:key="apifusiontables"-->
+            <!--android:title="API Key Fusion Tables" />-->
+    <!--</PreferenceCategory>-->
+</PreferenceScreen>

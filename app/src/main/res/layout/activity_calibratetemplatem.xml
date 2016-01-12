@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:opencv="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <org.opencv.android.JavaCameraView
+            android:layout_width="fill_parent"
+            android:layout_height="211dp"
+            android:id="@+id/tutorial1_activity_java_surface_view"
+            opencv:show_fps="true"
+            opencv:camera_id="any"/>
+    </FrameLayout>
+    <EditText
+        android:id="@+id/textocrcal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_column="0"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Hasil OCR ada di sini"/>
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <TableRow
+            android:id="@+id/tablerow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:text="Constant C :"
+                android:paddingTop="10dp"
+                />
+            <SeekBar
+                android:id="@+id/constantc"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:progress="1"
+                android:max="15"
+                android:progressDrawable="@xml/progress_drawable"
+                android:thumb="@xml/thumb_drawable"
+                android:paddingTop="10dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:id="@+id/constantcview"
+                android:text="1"
+                android:paddingTop="10dp"
+                android:layout_gravity="center"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="ThreshHigh :"
+                android:paddingTop="10dp"
+                />
+            <SeekBar
+                android:id="@+id/thresholdhigh"
+                android:layout_weight="1"
+                android:progress="255"
+                android:max="255"
+                android:progressDrawable="@xml/progress_drawable"
+                android:thumb="@xml/thumb_drawable"
+                android:paddingTop="10dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/thresholdhighview"
+                android:text="255"
+                android:paddingTop="10dp"
+                android:layout_gravity="center"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Blocksize :"
+                android:paddingTop="10dp"
+                />
+            <SeekBar
+                android:id="@+id/blocksize"
+                android:layout_weight="1"
+                android:progress="1"
+                android:max="3"
+                android:progressDrawable="@xml/progress_drawable"
+                android:thumb="@xml/thumb_drawable"
+                android:paddingTop="10dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/blocksizeview"
+                android:text="1"
+                android:paddingTop="10dp"
+                android:layout_gravity="center"
+                />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/testcal"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:onClick="testCalTem"
+            android:text="Test"
+            android:layout_gravity="center" />
+        <Button
+            android:id="@+id/savecal"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:onClick="saveCalTem"
+            android:text="Done"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Akur Extended</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <!--<string-array name="ukuran_label">-->
+        <!--<item>176x144</item>-->
+        <!--<item>320x240</item>-->
+        <!--<item>640x480</item>-->
+    <!--</string-array>-->
+    <!--<string-array name="ukuran_citra">-->
+        <!--<item>1</item>-->
+        <!--<item>2</item>-->
+        <!--<item>3</item>-->
+    <!--</string-array>-->
+    <string-array name="jenis_alat_ukur_label">
+        <item>SPL Meter</item>
+        <item>CO Meter CO40</item>
+        <item>CO2 Meter</item>
+        <item>Light Meter</item>
+        <item>Humidity Temperature Meter</item>
+    </string-array>
+    <string-array name="jenis_alat_ukur">
+        <item>slm</item>
+        <item>co</item>
+        <item>co2</item>
+        <item>lm</item>
+        <item>htm</item>
+    </string-array>
+    <string-array name="metode_olah_citra_label">
+        <item>Template Matching</item>
+        <item>Tesseract OCR</item>
+    </string-array>
+    <string-array name="metode_olah_citra">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="entries"></string-array>
+    <string-array name="entries_values"></string-array>
+    <string name="title_activity_maps">Map</string>
+</resources>
